@@ -12,11 +12,6 @@ module SocialPilot
 
     class << self
 
-        def access_token
-            defined? @access_token and @access_token or raise(
-                ConfigurationError, "SocialPilot access token not configured"
-            )
-        end
         attr_writer :access_token
 
         def request method, resource, params={}
@@ -24,6 +19,9 @@ module SocialPilot
 
             params.merge!({access_token: access_token})
 
+            defined? vd_access_token or raise(
+                ConfigurationError, "SocialPilot access token not configured"
+            )
             defined? method or raise(
                 ArgumentError, "Request method has not been specified"
             )
