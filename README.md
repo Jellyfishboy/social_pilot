@@ -29,6 +29,16 @@ e.g. *config/initializers/social_pilot.rb*
 
 ## Usage
 
+This gem provides a collection of operations for use within the SocialPilot API.
+
+### List
+
+List all accounts.
+
+```ruby
+SocialPilot::Account.list
+```
+
 TBC
 
 ## Versioning
