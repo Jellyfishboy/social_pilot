@@ -6,6 +6,10 @@ A Ruby wrapper for the SocialPilot platform API.
 
 [Release Notes](http://release.tomdallimore.com/projects/social-pilot)
 
+## Authentication
+
+Before using this gem, you will need to retrieve an `access_token` in order to access the SocialPilot API. Navigate to their docs found [here](https://developer.socialpilot.co) and set up an App then authentiate with their OAuth2 tool.
+
 ## Installation
 
 Add module to your Gemfile:
@@ -31,7 +35,7 @@ e.g. *config/initializers/social_pilot.rb*
 
 This gem provides a collection of operations for use within the SocialPilot API.
 
-### List
+### Account
 
 List all accounts.
 
