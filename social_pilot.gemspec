@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["me@tomdallimore.com"]
   s.homepage    = "https://github.com/Jellyfishboy/social_pilot"
   s.summary     = "A Ruby wrapper for the SocialPilot platform API"
-  s.description = "A Ruby wrapper for the UK SocialPilot platform API"
+  s.description = "A Ruby wrapper for the SocialPilot platform API"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
