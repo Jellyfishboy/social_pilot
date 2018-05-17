@@ -14,6 +14,10 @@ module SocialPilot
 
     class << self
 
+        def access_token
+
+        end
+
         attr_writer :access_token
 
         def request method, resource, params={}
