@@ -4,7 +4,7 @@
 
 A Ruby wrapper for the SocialPilot platform API.
 
-[Release Notes](http://release.tomdallimore.com/projects/social-pilot)
+[Release Notes](http://release.tomdallimore.com/projects/socialpilot)
 
 ## Authentication
 
