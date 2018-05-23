@@ -57,8 +57,6 @@ Post update with image.
 SocialPilot::Post.update_with_image(params)
 ```
 
-TBC
-
 ## Versioning
 
 UK Vehicle Data Ruby wrapper follows Semantic Versioning 2.0 as defined at
