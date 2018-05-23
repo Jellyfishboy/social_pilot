@@ -1,6 +1,7 @@
 require 'rest-client'
 
 require 'social_pilot/account'
+require 'social_pilot/post'
 
 
 module SocialPilot

@@ -43,6 +43,20 @@ List all accounts.
 SocialPilot::Account.list
 ```
 
+### Post
+
+Post standard update.
+
+```ruby
+SocialPilot::Post.update(params)
+```
+
+Post update with image.
+
+```ruby
+SocialPilot::Post.update_with_image(params)
+```
+
 TBC
 
 ## Versioning
