@@ -1,6 +1,7 @@
 require 'rest-client'
 
 require 'social_pilot/account'
+require 'social_pilot/post'
 
 
 module SocialPilot
@@ -25,6 +26,8 @@ module SocialPilot
 
             params.merge!({access_token: vd_access_token})
 
+            
+
             defined? vd_access_token or raise(
                 ConfigurationError, "SocialPilot access token not configured"
             )
@@ -34,19 +37,12 @@ module SocialPilot
             defined? resource or raise(
                 ArgumentError, "Request resource has not been specified"
             )
-
-            if method == :get 
-                headers = { :accept => :json, content_type: :json }.merge({params: params})
-                payload = nil
-            else
-                headers = { :accept => :json, content_type: :json }
-                payload = params
-            end
+ 
+            headers = { :accept => :json, content_type: :json }.merge({params: params})
 
             RestClient::Request.new({
                 method: method,
                 url: API_BASE + resource,
-                payload: payload ? payload.to_json : nil,
                 headers: headers
             }).execute do |response, request, result|
                 str_response = response.to_str        
