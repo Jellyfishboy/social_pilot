@@ -26,8 +26,6 @@ module SocialPilot
 
             params.merge!({access_token: vd_access_token})
 
-            
-
             defined? vd_access_token or raise(
                 ConfigurationError, "SocialPilot access token not configured"
             )
